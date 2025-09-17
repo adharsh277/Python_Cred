@@ -19,3 +19,9 @@
 
 ###factorial of the numbers
  ###
+# for i in range(1, 11):
+     # print("5 x", i, "=", 5 * i)
+i=10
+while i>=1:
+    print(i)
+    i-=1
