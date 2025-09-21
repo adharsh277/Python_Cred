@@ -34,3 +34,19 @@ def check_for_line():
     return -1   # if not found
 
 print(check_for_line())
+
+
+
+##
+with open("lecture7/evenumber.txt", "r") as f:
+    data = f.read()
+    print("File content:", data)
+
+    nums = data.split(",")   # split by comma
+    count = 0                # initialize counter
+
+    for val in nums:
+        if int(val.strip()) % 2 == 0:   # strip removes spaces
+            count += 1
+
+    print("Total even numbers:", count)
