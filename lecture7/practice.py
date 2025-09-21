@@ -18,4 +18,19 @@ with open ("lecture7/practice.txt","r") as f:
         print("found")
     else:
         print("not found")
-   
+
+## to find in which line of the files doees the word learning occur print 
+
+def check_for_line():
+    word = "python"
+    line_no = 1
+
+    with open("lecture7/practice.txt", "r") as f:
+        for line in f:
+            if word in line:
+                return line_no   # return line number if found
+            line_no += 1
+
+    return -1   # if not found
+
+print(check_for_line())
