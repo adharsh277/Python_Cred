@@ -1,5 +1,9 @@
 class Student:
     # name= "karna"
+
+
+
+    #parameterixed  constructor
     def __init__(self, name,marks):
         self.name = name
         self.marks= marks
